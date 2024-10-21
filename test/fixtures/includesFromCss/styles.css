@@ -1,0 +1,7 @@
+@import "./styles/nested.css";
+@import url("./styles/nested.url.css");
+
+html {
+  background-image: url("./assets/asset.png");
+  background-color: #cccccc;
+}

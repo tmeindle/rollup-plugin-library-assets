@@ -1,0 +1,36 @@
+{
+  "name": "rollup-plugin-library-assets",
+  "version": "0.1.0",
+  "description": "A rollup plugin for including component library assets such as stylsheets, fonts and images",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "rollup": "rollup",
+    "lint": "eslint --fix",
+    "test": "vitest"
+  },
+  "author": "Timothy Meindle",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "colorette": "2.0.20",
+    "css-url-parser": "1.1.4",
+    "fs-extra": "11.2.0",
+    "p-limit": "6.1.0",
+    "postcss": "8.4.47",
+    "postcss-url": "10.1.3",
+    "postcss-scss": "4.0.9",
+    "rollup-pluginutils": "2.8.2",
+    "sass": "1.79.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.13.0",
+    "@vitest/coverage-v8": "2.1.3",
+    "eslint": "9.13.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "globals": "15.11.0",
+    "prettier": "3.3.3",
+    "rollup": "4.24.0",
+    "vitest": "^2.1.3"
+  }
+}
