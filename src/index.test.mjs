@@ -2,9 +2,9 @@ import { existsSync, rmdirSync } from 'fs';
 import path from 'path';
 import plugin from './index.mjs';
 import { rollup } from 'rollup';
-import includesFromJsConfig from './test/fixtures/includesFromJs/config.mjs';
-import includesFromCssConfig from './test/fixtures/includesFromCss/config.mjs';
-import includesFromScssConfig from './test/fixtures/includesFromScss/config.mjs';
+import includesFromJsConfig from '../test/fixtures/includesFromJs/config.mjs';
+import includesFromCssConfig from '../test/fixtures/includesFromCss/config.mjs';
+import includesFromScssConfig from '../test/fixtures/includesFromScss/config.mjs';
 
 const performTest = async (testConfig) => {
   if (existsSync(testConfig.output.dir)) {

@@ -2,15 +2,29 @@
   "name": "rollup-plugin-library-assets",
   "version": "0.1.0",
   "description": "A rollup plugin for including component library assets such as stylsheets, fonts and images",
-  "main": "index.mjs",
-  "type": "module",
+  "author": "Timothy Meindle",
+  "license": "CC0-1.0",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
   "scripts": {
-    "rollup": "rollup",
+    "rollup": "rollup --config ./rollup.config.mjs",
     "lint": "eslint --fix",
     "test": "vitest"
   },
-  "author": "Timothy Meindle",
-  "license": "CC0-1.0",
   "dependencies": {
     "colorette": "2.0.20",
     "css-url-parser": "1.1.4",

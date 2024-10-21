@@ -5,13 +5,13 @@ import prettierPlugin from 'eslint-plugin-prettier/recommended';
 
 export default [
   {
-    ignores: ['.prettierrc.js'],
+    ignores: ['.prettierrc.js', '**/dist/**'],
   },
   {
     languageOptions: { globals: globals.node },
   },
   {
-    files: ['**.test.*'],
+    files: ['**/*.test.*'],
     languageOptions: { globals: globals.jest },
   },
   {
