@@ -1,8 +1,8 @@
 # rollup-plugin-library-assets
 
-This plugin is for bundling component library modules to be imported and rebundled in web applications that will ultimately be bundled with rsbuild, webpack, vite, etc.  The main use case for this is to use css or sass modules for styling and css variables (--variables) for themeing while allowing the app bundler to treeshake and bundle only the styles required for the consumed library components.
+This plugin is for bundling component library modules which are to be imported in web applications that will ultimately be rebundled with rsbuild, webpack, vite, etc.  The main use case for this is to use css or sass modules for styling and css variables (--variables) for themeing while allowing the app bundler to treeshake and bundle only the styles required for the consumed library components.
 
-It scans imports and copies assets such as css and sass stylesheets, fonts, and images relative to their to their importer's output.  This preserves the module folder structure.  CSS and Sass stylesheets have their imports recursively scanned and any relative assets are also copied to the output folder in relative fashion.  Output filenames and the import statements for them are not changed.  This defers allows the bundling and shaking of these assets to the web application bundler which must be configured to handle the library asset imports properly.
+It scans imports and copies assets such as css and sass stylesheets, fonts, and images relative to their to the importer's output location.  This preserves the module folder structure.  CSS and Sass stylesheets have their imports recursively scanned and any relative assets are also copied to the output folder in a relative fashion.  The filenames of assets and the import statements in the source are not changed.  This defers the bundling and shaking of these assets to the web application bundler which must be configured to handle the included library asset imports properly.
 
 Notes:
 * This plugin requires that the `preserveModules` output option be set to true.
