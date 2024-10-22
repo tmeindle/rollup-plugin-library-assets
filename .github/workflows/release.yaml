@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
+
       - name: Setup npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
 
@@ -53,7 +53,7 @@ jobs:
           pnpm -r publish --no-git-checks
 
       - name: GitHub Release
-        run: pnpx changelogithub
+        run: pnpm exec changelogithub
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
  
