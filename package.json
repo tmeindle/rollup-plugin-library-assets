@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-library-assets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A rollup plugin that includes library assets such as stylsheets, fonts and images",
   "author": "Timothy Meindle",
   "license": "CC0-1.0",
